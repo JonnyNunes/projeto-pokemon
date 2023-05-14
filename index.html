@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--A tag head é a cabeça da página-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto-Pokemon</title>
+    <!--Usando o fonte do google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilo.css">
+    <link rel="stylesheet" href="./src/css/scrollbar.css">
+</head>
+
+<body>
+    <!--Definindo o cabeçalho da página com a tag header-->
+    <header>
+        <!--A tag a é uma tag para fazer que o objeto seja clicável, podendo direcionar a uma outra página com o atributo href-->
+        <a href="/">
+            <!--A tag img é destinada para imagem, é com ela que você carrega uma imagem e a tag alt seria uma alternativa se a imagem não for carregada-->
+            <img src="./src/imagens/pokeball.png" alt="pokebola" class="logo">
+        </a>
+        <!--A tag button é para criar um botao que poderá disparar um evento-->
+        <button id="botao-alterar-tema">
+            <img src="./src/imagens/sun.png" alt="sol" class="botao-sol">
+        </button>
+    </header>
+    <!--A tag main é para o conteúdo principal da página-->
+    <main>
+        <!--A tag ul é para lista não ordenadas, diferente da tag ol que é lista ordenada (como uma lista de rank)-->
+        <ul class="listagem-pokemon">
+            <!--A tag li é o item da tag ul, ou seja, os itens da lista-->
+            <!--item 1-->
+            <li class="cartao-pokemon">
+                <!--A tag div (divisor) é utilizado mais quando queremos deslocar objetos ou agrupamento-->
+                <div class="informacoes">
+                    <span>Bulbasaur</span>
+                    <span>#001</span>
+                </div>
+
+                <img src="./src/imagens/bulbasaur.gif" alt="bulbasaur" class="gif">
+                <!--Vamos criar mais uma lista para os tipos representado pelo objeto (imagem)-->
+                <ul class="tipos">
+                    <!--Seperar com espaço em branco, você estará criando duas ou mais classes-->
+                    <li class="tipo grama">
+                        Grama
+                    </li>
+                    <li class="tipo veneno">
+                        Veneno
+                    </li>
+                </ul>
+                <!--Um paragrafo com a tag p para escrever um texto abaixo dos tipos e imagem-->
+                <p class="descricao">
+                    Há uma semente de planta em suas costas desde o dia
+                    que este Pókemo nasce. A semente cresce lentamente.
+                </p>
+            </li>
+
+            <!--item 2-->
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Ivysaur</span>
+                    <span>#002</span>
+                </div>
+
+                <img src="./src/imagens/ivysaur.gif" alt="Ivysaur" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo grama">
+                        Grama
+                    </li>
+                    <li class="tipo veneno">
+                        Veneno
+                    </li>
+                </ul>
+
+                <p class="descricao">
+                    Quando o buldo em suas costas cresce, parece perde a capacidade
+                    de ficar de pé em suas patas taseira.
+                </p>
+            </li>
+
+            <!--item 3-->
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Venusaur</span>
+                    <span>#003</span>
+                </div>
+
+                <img src="./src/imagens/venusaur.gif" alt="Venusaur" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo grama">
+                        Grama
+                    </li>
+                    <li class="tipo veneno">
+                        Veneno
+                    </li>
+                </ul>
+
+                <p class="descricao">
+                    Suas costas é mais peseda. A planta representa o seu nascer.
+                    O Pókemon está em estado de protidão.
+                </p>
+            </li>
+
+            <!--item 4-->
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Chamas</span>
+                    <span>#004</span>
+                </div>
+
+                <img src="./src/imagens/chamas.gif" alt="Chamas" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo fogo">
+                        Fogo
+                    </li>
+                </ul>
+
+                <p class="descricao">
+                    Sua forma é pequena e inofensiva. Mas seu poder pode supreender
+                    com chamas. Um Pókemon com calda de ponta de fogo.
+                </p>
+            </li>
+
+            <!--item 5-->
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Charmeleon</span>
+                    <span>#005</span>
+                </div>
+
+                <img src="./src/imagens/charmeleon.gif" alt="Charmeleon" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo fogo">
+                        Fogo
+                    </li>
+                </ul>
+
+                <p class="descricao">
+                    Esperto e confiante. Pókemon de chamas avermelhado e um
+                    onipotente deliberante.
+                </p>
+            </li>
+
+            <!--item 6-->
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Charizand</span>
+                    <span>#006</span>
+                </div>
+
+                <img src="./src/imagens/charizard.gif" alt="Charizand" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo fogo">
+                        Fogo
+                    </li>
+                </ul>
+
+                <p class="descricao">
+                    Um dragão com poderes supreendentes. Com chamas e tamanho de assustar.
+                </p>
+            </li>
+
+            <!--item 7-->
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Squirtle</span>
+                    <span>#007</span>
+                </div>
+
+                <img src="./src/imagens/squirtle.gif" alt="Squirtle" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo agua">
+                        Água
+                    </li>
+                </ul>
+
+                <p class="descricao">
+                    Uma espécie de tartagura. Poder médio e defesa aumentada.
+                </p>
+            </li>
+
+            <!--item 8-->
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Wartortle</span>
+                    <span>#008</span>
+                </div>
+
+                <img src="./src/imagens/wartortle.gif" alt="Wartortle" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo agua">
+                        Água
+                    </li>
+                </ul>
+
+                <p class="descricao">
+                    Raivoso e desafiador. Possue o vento do tornado. Pode eliminar seu rival com esses golpes poderosos.
+                </p>
+            </li>
+
+            <!--item 9-->
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Blastoise</span>
+                    <span>#009</span>
+                </div>
+
+                <img src="./src/imagens/blastoise.gif" alt="Blastoise" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo agua">
+                        Água
+                    </li>
+                </ul>
+
+                <p class="descricao">
+                    Casco de canhão. Um espécie poderasa com fólego. Se manter em portidão sem
+                    desviar o olhar do seu inimigo.
+                </p>
+            </li>
+
+            <!--item 10-->
+            <li class="cartao-pokemon">
+                <div class="informacoes">
+                    <span>Caterpie</span>
+                    <span>#010</span>
+                </div>
+
+                <img src="./src/imagens/caterpie.gif" alt="Caterpie" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo inseto">
+                        Inseto
+                    </li>
+                </ul>
+
+                <p class="descricao">
+                    Uma criatura capaz de solta raizes em sua boca. Aplicar golpes
+                    perfurantes em seu rival.
+                </p>
+            </li>
+        </ul>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>

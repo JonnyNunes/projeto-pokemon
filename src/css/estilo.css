@@ -1,0 +1,151 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    width: auto;
+    margin: 0% auto;
+    background-color: rgb(173, 142, 102); /*Cor de fundo*/
+    color: #82139e; /*Cor de texto*/
+}
+
+/*Esse é a especificidade definido por uma classe (modo-escuro) que vamos manipular com javascript*/
+body.modo-escuro, .modo-escuro main{
+    background-color: rgb(53, 49, 49);
+    color: rgb(233, 223, 236);
+}
+
+.modo-escuro header{
+    background-color: rgb(20, 70, 25);
+}
+
+/*Irá preencher somente o cabeçalho da página com a cor*/
+header{
+    background-color: rgb(93, 156, 30);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/*Esse modo de referênciar as classes é quando se diz que dentro da tag (header) as tags que tiverem essas classes (logo, botao-sol) foi serem modificadas com essas propriedades*/
+header .logo,
+header .botao-sol{
+    width: 30px;
+    height: 30px;
+    transition: 0.2s ease-in-out; /*O transition é uma forma de aplicar uma animaqção*/
+}
+
+/*Para estelizar ids usamos o #, lembrando que com a classes é com um '.'*/
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+}
+
+header .logo:hover, .botao-sol:hover, 
+main .cartao-pokemon:hover{
+    transform: scale(1.08);
+    cursor: pointer; /*Mudança de cursor*/
+}
+
+main{
+    background-color: rgb(162, 179, 196);
+    padding: 20px;
+}
+
+/*A lista (ul) do main*/
+main .listagem-pokemon{
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /*Defininr uma medida para separar os elementos*/
+    justify-content: center;
+}
+
+/*os itens (li) da lista*/
+main .cartao-pokemon{
+    background-color: rgb(184, 201, 33);
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*Aninhamento dos itens*/
+    gap: 15px;
+    border-radius: 20px;
+    border: 5px inset #82139e;
+    transition: 0.2s ease-in-out;
+}
+
+/*Aplicando a mudança da cor de fundo do cartão em efeito animado*/
+main .cartao-pokemon:hover{
+    background-color: rgb(141, 123, 240);
+}
+
+/*A tag div com elementos span*/
+main .listagem-pokemon .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border:  1px solid #892fa0;
+    border-radius: 10px;
+}
+
+main .listagem-pokemon .informacoes span{
+    /*background-color: aqua;*/
+    padding: 8px;
+    /*O transform é o mesmo que transformar algo em alguma outra coisa*/
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+/*Classe das imagens dos itens da lista maior*/
+main .listagem-pokemon .cartao-pokemon .gif{
+    width: 40%;
+    height: 40%;
+}
+
+/*Classe das lista dos itens da lista menor*/
+main .listagem-pokemon .cartao-pokemon .tipos{
+    /*background-color: rgb(221, 213, 228);*/
+    display: flex;
+    gap: 15px;
+}
+
+/*Itens da lista mais interna*/
+main .listagem-pokemon .cartao-pokemon .tipo{
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+/*Classes do tipo da espécies de seleção*/
+/*Essas classes são feitas separados por espaço na definição das classes*/
+.grama{
+    background-color: rgb(73, 230, 73);
+}
+
+.veneno{
+    background-color: rgb(233, 76, 168);
+}
+
+.fogo{
+    background-color: rgb(240, 143, 24);
+}
+
+.agua{
+    background-color: rgb(132, 143, 238);
+}
+
+.inseto{
+    background-color: rgb(97, 214, 61);
+}
+
+/*Configurando o paragrafo dos elementos*/
+main .descricao{
+    max-height: 60px;
+    /*Esconde (hidden) o conteudo que esteja tranbordando, com scroll é adicinado uma barra de rolagem*/
+    overflow-y: scroll;
+    padding-right: 5px;
+    font-size: 15px;
+}
+
+/*A classe modo-escuro lembrando que vamos usar no javascript*/
+.modo-escuro .cartao-pokemon{
+    background-color: rgb(57, 59, 65);
+    border: 5px outset #5e0e72;
+}
